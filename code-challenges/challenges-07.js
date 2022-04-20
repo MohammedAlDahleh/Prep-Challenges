@@ -21,11 +21,9 @@
 //  2- The first letters of the firstName and lastName should be capital letter
 
 const objLat = (obj) => {
-    // write your code here
-    let oldFirstName = obj.firstName;
-    let oldLastName = obj.lastName;
-    let newFirstName = oldFirstName.replace(/(^\w{1})|(\s+\w{1})/g, letter => letter.toUpperCase());
-    let newLastName = oldLastName.replace(/(^\w{1})|(\s+\w{1})/g, letter => letter.toUpperCase());
+    // write your code heress
+    let newFirstName = obj.firstName.replace(/\w\S*/g, (w) => (w.replace(/^\w/, (c) => c.toUpperCase())));
+    let newLastName = obj.lastName.replace(/\w\S*/g, (w) => (w.replace(/^\w/, (c) => c.toUpperCase())));
     
     obj.prototype.printText= function(){
         console.log(`my name is ${newFirstName}  ${newLastName} I am ${obj.age} YO, and I love ${ojb.hobby}`);
@@ -95,13 +93,14 @@ const objLat = (obj) => {
 
 const cvFormatter = (arr) => {
     // write your code here
+    let fullName ;
     let newcvs = new Array ();
     function checkAnswer(){
         for (let i =0;i<arr.length;i++){
         if (arr[firstName]  === " " || arr[lastName] === " " ){
             continue;
         }else if(yearsOfExperience > 1){
-        newcvs[i].push(firstName+lastName);
+        newcvs[i].push(firstName+lastName as fullName);
         newcvs[i].push(tech);
         }
     }

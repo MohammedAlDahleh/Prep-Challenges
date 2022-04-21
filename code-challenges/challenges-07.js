@@ -22,13 +22,17 @@
 
 const objLat = (obj) => {
     // write your code heress
-    let newFirstName = obj.firstName.replace(/\w\S*/g, (w) => (w.replace(/^\w/, (c) => c.toUpperCase())));
-    let newLastName = obj.lastName.replace(/\w\S*/g, (w) => (w.replace(/^\w/, (c) => c.toUpperCase())));
     
-    obj.prototype.printText= function(){
-        console.log(`my name is ${newFirstName}  ${newLastName} I am ${obj.age} YO, and I love ${ojb.hobby}`);
-        //console.log(`my name is ${obj.firstName}  ${obj.lastName} I am ${obj.age} YO, and I love ${ojb.hobby}`);
-    }
+     let x = `my name is ${obj.firstName.charAt(0).toUpperCase() + obj.firstName.slice(1)} ${obj.lastName.charAt(0).toUpperCase() + obj.lastName.slice(1)} I am ${obj.age} YO, and I love ${obj.hobby}.`
+     
+    // let newFirstName = obj.firstName.replace(/\w\S*/g, (w) => (w.replace(/^\w/, (c) => c.toUpperCase())));
+    // let newLastName = obj.lastName.replace(/\w\S*/g, (w) => (w.replace(/^\w/, (c) => c.toUpperCase())));
+    
+     obj.prototype.printText= function(){
+         console.log(x);
+             //console.log(`my name is ${obj.firstName}  ${obj.lastName} I am ${obj.age} YO, and I love ${ojb.hobby}`);
+     }
+    return x;
 };
 // -------------------------------------------------------------------------------------------------------
 
@@ -93,19 +97,30 @@ const objLat = (obj) => {
 
 const cvFormatter = (arr) => {
     // write your code here
-    let fullName ;
-    let newcvs = new Array ();
-    function checkAnswer(){
-        for (let i =0;i<arr.length;i++){
-        if (arr[firstName]  === " " || arr[lastName] === " " ){
-            continue;
-        }else if(yearsOfExperience > 1){
-        newcvs[i].push(firstName+lastName as fullName);
-        newcvs[i].push(tech);
-        }
-    }
-    }
-    checkAnswer();
+    
+    let output = []
+    for (let i = 0; i < arr.length; i++) {
+
+        if (arr[i].lastName == null && arr[i].yearsOfExperience > 1) {
+            output.push({ fullName: `${arr[i].firstName}`, tech: `${arr[i].tech}` })
+
+        } else if (arr[i].yearsOfExperience > 1) {
+            output.push({ fullName: `${arr[i].firstName} ${arr[i].lastName}`, tech: `${arr[i].tech}` })
+        } else continue;
+    } return output;
+
+    // let newcvs = new Array ();
+    // function checkAnswer(){
+    //     for (let i =0;i<arr.length;i++){
+    //     if (arr[firstName]  === " " || arr[lastName] === " " ){
+    //         continue;
+    //     }else if(yearsOfExperience > 1){
+    //     newcvs[i].push(fullName firstName+lastName);
+    //     newcvs[i].push(tech);
+    //     }
+    // }
+    // }
+    // checkAnswer();
 };
 // -------------------------------------------------------------------------------------------------------
 

@@ -21,18 +21,21 @@
 //  2- The first letters of the firstName and lastName should be capital letter
 
 const objLat = (obj) => {
+
     // write your code heress
+//     let newFirstName = obj.firstName.replace(/\w\S*/g, (w) => (w.replace(/^\w/, (c) => c.toUpperCase())));
+//     let newLastName = obj.lastName.replace(/\w\S*/g, (w) => (w.replace(/^\w/, (c) => c.toUpperCase())));
     
-     let x = `my name is ${obj.firstName.charAt(0).toUpperCase() + obj.firstName.slice(1)} ${obj.lastName.charAt(0).toUpperCase() + obj.lastName.slice(1)} I am ${obj.age} YO, and I love ${obj.hobby}.`
-     
-    // let newFirstName = obj.firstName.replace(/\w\S*/g, (w) => (w.replace(/^\w/, (c) => c.toUpperCase())));
-    // let newLastName = obj.lastName.replace(/\w\S*/g, (w) => (w.replace(/^\w/, (c) => c.toUpperCase())));
-    
-     obj.prototype.printText= function(){
-         console.log(x);
-             //console.log(`my name is ${obj.firstName}  ${obj.lastName} I am ${obj.age} YO, and I love ${ojb.hobby}`);
-     }
-    return x;
+//     obj.prototype.printText= function(){
+//         console.log(`my name is ${newFirstName}  ${newLastName} I am ${obj.age} YO, and I love ${ojb.hobby}`);
+//         //console.log(`my name is ${obj.firstName}  ${obj.lastName} I am ${obj.age} YO, and I love ${ojb.hobby}`);
+
+    // write your code here
+    ogj.prototype.information = function(){
+        console.log(`my name is ${ojb.firstName.tochartAt().upperCase} ${ojb.lastName.chartAt().upperCase()} I am ${ojb.age} YO, and I love ${ojb.hobby}.`);
+
+    }
+
 };
 // -------------------------------------------------------------------------------------------------------
 
@@ -97,6 +100,7 @@ const objLat = (obj) => {
 
 const cvFormatter = (arr) => {
     // write your code here
+
     
     let output = []
     for (let i = 0; i < arr.length; i++) {
@@ -121,6 +125,7 @@ const cvFormatter = (arr) => {
     // }
     // }
     // checkAnswer();
+
 };
 // -------------------------------------------------------------------------------------------------------
 

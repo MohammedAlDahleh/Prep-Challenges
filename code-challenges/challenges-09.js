@@ -121,9 +121,9 @@ const employeesBonus = (arr) => {
     // write your code here
     arr.forEach(element => {
         if(element.workHours > 8){
-          element.salary = parseFloat(element.salary)+100+'$';
-         }else if(element.workHours<=5){
-             element.salary = parseFloat(element.salary)+ 50 +'$';
+          element.salary = `${parseFloat(element.salary)}+${100}+'$'`;
+         }else {
+             element.salary = `${parseFloat(element.salary)}+${50}+'$'`;
         }  
     }); return arr;
 }

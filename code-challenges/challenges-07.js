@@ -22,14 +22,9 @@
 
 const objLat = (obj) => {
     // write your code here
-    let oldFirstName = obj.firstName;
-    let oldLastName = obj.lastName;
-    let newFirstName = oldFirstName.replace(/(^\w{1})|(\s+\w{1})/g, letter => letter.toUpperCase());
-    let newLastName = oldLastName.replace(/(^\w{1})|(\s+\w{1})/g, letter => letter.toUpperCase());
     
     obj.prototype.printText= function(){
-        console.log(`my name is ${newFirstName}  ${newLastName} I am ${obj.age} YO, and I love ${ojb.hobby}`);
-        //console.log(`my name is ${obj.firstName}  ${obj.lastName} I am ${obj.age} YO, and I love ${ojb.hobby}`);
+        console.log(`my name is ${ojb.firstName.tochartAt(0).upperCase() + ojb.firstName.slice(1)} ${ojb.lastName.tochartAt(0).upperCase() + ojb.lastName.slice(1)} I am ${ojb.age} YO, and I love ${ojb.hobby}.`);
     }
 };
 // -------------------------------------------------------------------------------------------------------

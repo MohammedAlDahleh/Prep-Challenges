@@ -31,11 +31,10 @@ const objLat = (obj) => {
 //         //console.log(`my name is ${obj.firstName}  ${obj.lastName} I am ${obj.age} YO, and I love ${ojb.hobby}`);
 
     // write your code here
-    ogj.prototype.information = function(){
-        console.log(`my name is ${ojb.firstName.tochartAt().upperCase} ${ojb.lastName.chartAt().upperCase()} I am ${ojb.age} YO, and I love ${ojb.hobby}.`);
 
-    }
-
+    let aboutMe = `my name is ${obj.firstName.charAt(0).toUpperCase() + obj.firstName.slice(1)} ${obj.lastName.charAt(0).toUpperCase() + obj.lastName.slice(1)} I am ${obj.age} YO, and I love ${obj.hobby}.`;
+    console.log(aboutMe);
+     return aboutMe;
 };
 // -------------------------------------------------------------------------------------------------------
 
@@ -100,8 +99,6 @@ const objLat = (obj) => {
 
 const cvFormatter = (arr) => {
     // write your code here
-
-    
     let output = []
     for (let i = 0; i < arr.length; i++) {
 
@@ -112,19 +109,6 @@ const cvFormatter = (arr) => {
             output.push({ fullName: `${arr[i].firstName} ${arr[i].lastName}`, tech: `${arr[i].tech}` })
         } else continue;
     } return output;
-
-    // let newcvs = new Array ();
-    // function checkAnswer(){
-    //     for (let i =0;i<arr.length;i++){
-    //     if (arr[firstName]  === " " || arr[lastName] === " " ){
-    //         continue;
-    //     }else if(yearsOfExperience > 1){
-    //     newcvs[i].push(fullName firstName+lastName);
-    //     newcvs[i].push(tech);
-    //     }
-    // }
-    // }
-    // checkAnswer();
 
 };
 // -------------------------------------------------------------------------------------------------------

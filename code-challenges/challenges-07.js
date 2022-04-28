@@ -22,9 +22,9 @@
 
 const objLat = (obj) => {
     // write your code here
-    ogj.prototype.information = function(){
-        console.log(`my name is ${ojb.firstName.tochartAt().upperCase} ${ojb.lastName.chartAt().upperCase()} I am ${ojb.age} YO, and I love ${ojb.hobby}.`);
-    }
+    let aboutMe = `my name is ${obj.firstName.charAt(0).toUpperCase() + obj.firstName.slice(1)} ${obj.lastName.charAt(0).toUpperCase() + obj.lastName.slice(1)} I am ${obj.age} YO, and I love ${obj.hobby}.`;
+    console.log(aboutMe);
+     return aboutMe;
 };
 // -------------------------------------------------------------------------------------------------------
 

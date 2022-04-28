@@ -20,20 +20,13 @@
 //  1- The text template is "my name is ** ** I am ** YO, and I love **."
 //  2- The first letters of the firstName and lastName should be capital letter
 
-const objLat = (obj) => {
-    // write your code heress
-    
-     let x = `my name is ${obj.firstName.charAt(0).toUpperCase() + obj.firstName.slice(1)} ${obj.lastName.charAt(0).toUpperCase() + obj.lastName.slice(1)} I am ${obj.age} YO, and I love ${obj.hobby}.`
-     
-    // let newFirstName = obj.firstName.replace(/\w\S*/g, (w) => (w.replace(/^\w/, (c) => c.toUpperCase())));
-    // let newLastName = obj.lastName.replace(/\w\S*/g, (w) => (w.replace(/^\w/, (c) => c.toUpperCase())));
-    
-     obj.prototype.printText= function(){
-         console.log(x);
-             //console.log(`my name is ${obj.firstName}  ${obj.lastName} I am ${obj.age} YO, and I love ${ojb.hobby}`);
-     }
-    return x;
-};
+const objLat = (obj) => {    
+     let aboutMe = `my name is ${obj.firstName.charAt(0).toUpperCase() + obj.firstName.slice(1)} ${obj.lastName.charAt(0).toUpperCase() + obj.lastName.slice(1)} I am ${obj.age} YO, and I love ${obj.hobby}.`;
+    console.log(aboutMe);
+     return aboutMe;
+}
+ 
+
 // -------------------------------------------------------------------------------------------------------
 
 // -------------------------------------------------------------------------------------------------------

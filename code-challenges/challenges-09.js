@@ -21,14 +21,12 @@
 const arrInc = (arr) => {
     let result = [];
     // write your code here
-    function incre ()
-    {
         arr.forEach(element => {
             result.push(element +10)
         });  
         return result;
-    }
-    }
+    
+}
   
 // -------------------------------------------------------------------------------------------------------
 
@@ -46,11 +44,11 @@ const arrInc = (arr) => {
 // 
 const roundDecimals = (arr) => {
     // write your code here
-    function convert(){
+
         arr.forEach(element => {
             return Math.round(element);
         });  
-    } 
+}   
 // -------------------------------------------------------------------------------------------------------
 
 // -------------------------------------------------------------------------------------------------------

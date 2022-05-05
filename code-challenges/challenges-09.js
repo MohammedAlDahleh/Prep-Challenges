@@ -21,14 +21,12 @@
 const arrInc = (arr) => {
     let result = [];
     // write your code here
-    function incre ()
-    {
         arr.forEach(element => {
             result.push(element +10)
         });  
         return result;
-    }
-    }
+    
+}
   
 // -------------------------------------------------------------------------------------------------------
 
@@ -45,12 +43,12 @@ const arrInc = (arr) => {
 //  [5, 6, 7, 7]
 // 
 const roundDecimals = (arr) => {
+    let afterRound = [];
     // write your code here
-    function convert(){
-        arr.forEach(element => {
-            return Math.round(element);
-        });  
-    } 
+    arr.forEach(element => {
+        afterRound.push(Math.round(element))
+    });       
+}   
 // -------------------------------------------------------------------------------------------------------
 
 // -------------------------------------------------------------------------------------------------------
@@ -149,4 +147,4 @@ const mostExpensive = (budget, mouseArray, keyBoardArray) => {
 }
 // -------------------------------------------------------------------------------------------------------
 
-module.exports = { arrInc, roundDecimals, employeesBonus, mostExpensive };
+module.exports = { arrInc, roundDecimals, employeesBonus, mostExpensive }:

@@ -100,19 +100,6 @@ const cvFormatter = (arr) => {
             output.push({ fullName: `${arr[i].firstName} ${arr[i].lastName}`, tech: `${arr[i].tech}` })
         } else continue;
     } return output;
-
-    // let newcvs = new Array ();
-    // function checkAnswer(){
-    //     for (let i =0;i<arr.length;i++){
-    //     if (arr[firstName]  === " " || arr[lastName] === " " ){
-    //         continue;
-    //     }else if(yearsOfExperience > 1){
-    //     newcvs[i].push(fullName firstName+lastName);
-    //     newcvs[i].push(tech);
-    //     }
-    // }
-    // }
-    // checkAnswer();
 };
 // -------------------------------------------------------------------------------------------------------
 

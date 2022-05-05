@@ -20,22 +20,13 @@
 //  1- The text template is "my name is ** ** I am ** YO, and I love **."
 //  2- The first letters of the firstName and lastName should be capital letter
 
-const objLat = (obj) => {
-
-    // write your code heress
-//     let newFirstName = obj.firstName.replace(/\w\S*/g, (w) => (w.replace(/^\w/, (c) => c.toUpperCase())));
-//     let newLastName = obj.lastName.replace(/\w\S*/g, (w) => (w.replace(/^\w/, (c) => c.toUpperCase())));
-    
-//     obj.prototype.printText= function(){
-//         console.log(`my name is ${newFirstName}  ${newLastName} I am ${obj.age} YO, and I love ${ojb.hobby}`);
-//         //console.log(`my name is ${obj.firstName}  ${obj.lastName} I am ${obj.age} YO, and I love ${ojb.hobby}`);
-
-    // write your code here
-
-    let aboutMe = `my name is ${obj.firstName.charAt(0).toUpperCase() + obj.firstName.slice(1)} ${obj.lastName.charAt(0).toUpperCase() + obj.lastName.slice(1)} I am ${obj.age} YO, and I love ${obj.hobby}.`;
-    console.log(aboutMe);
+const objLat = (obj) => {    
+     let aboutMe = `my name is ${obj.firstName.charAt(0).toUpperCase() + obj.firstName.slice(1)} ${obj.lastName.charAt(0).toUpperCase() + obj.lastName.slice(1)} I am ${obj.age} YO, and I love ${obj.hobby}.`;
      return aboutMe;
-};
+}
+ 
+
+
 // -------------------------------------------------------------------------------------------------------
 
 // -------------------------------------------------------------------------------------------------------
@@ -101,15 +92,12 @@ const cvFormatter = (arr) => {
     // write your code here
     let output = []
     for (let i = 0; i < arr.length; i++) {
-
         if (arr[i].lastName == null && arr[i].yearsOfExperience > 1) {
             output.push({ fullName: `${arr[i].firstName}`, tech: `${arr[i].tech}` })
-
         } else if (arr[i].yearsOfExperience > 1) {
             output.push({ fullName: `${arr[i].firstName} ${arr[i].lastName}`, tech: `${arr[i].tech}` })
         } else continue;
     } return output;
-
 };
 // -------------------------------------------------------------------------------------------------------
 

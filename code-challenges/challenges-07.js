@@ -26,6 +26,7 @@ const objLat = (obj) => {
 }
  
 
+
 // -------------------------------------------------------------------------------------------------------
 
 // -------------------------------------------------------------------------------------------------------
@@ -89,13 +90,10 @@ const objLat = (obj) => {
 
 const cvFormatter = (arr) => {
     // write your code here
-    
     let output = []
     for (let i = 0; i < arr.length; i++) {
-
         if (arr[i].lastName == null && arr[i].yearsOfExperience > 1) {
             output.push({ fullName: `${arr[i].firstName}`, tech: `${arr[i].tech}` })
-
         } else if (arr[i].yearsOfExperience > 1) {
             output.push({ fullName: `${arr[i].firstName} ${arr[i].lastName}`, tech: `${arr[i].tech}` })
         } else continue;

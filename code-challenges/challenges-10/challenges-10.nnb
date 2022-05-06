@@ -24,6 +24,13 @@
         {
             "language": "javascript",
             "source": [
+                ""
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
                 "function birthdayCakeCandles(candles) {\n    let maxHight=candles[0];\n    for (let i = 0;i<candles.length;i++){\n        if(maxHight < candles[i]){\n            maxHight = candles[i]; \n        }\n    }\n    let count =0;\n    for (let i = 0;i<candles.length;i++){\n        if(maxHight == candles[i]){\n            count+=1;\n        }\n    }\n    console.log(count);\n    return count;\n    }\n    "
             ],
             "outputs": []

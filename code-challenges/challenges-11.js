@@ -18,8 +18,9 @@
 
 function square(arr) {
 
-    const squareArr = arr.map(arr => arr * arr);
-   return squareArr;
+    let squareArr 
+    squareArr = arr.map(arr => arr * arr);
+    return squareArr;
 }
 // -------------------------------------------------------------------------------------------------------
 

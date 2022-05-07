@@ -20,8 +20,10 @@
 //  1- The text template is "my name is ** ** I am ** YO, and I love **."
 //  2- The first letters of the firstName and lastName should be capital letter
 
-const objLat = (obj) => {    
-     let aboutMe = `my name is ${obj.firstName.charAt(0).toUpperCase() + obj.firstName.slice(1)} ${obj.lastName.charAt(0).toUpperCase() + obj.lastName.slice(1)} I am ${obj.age} YO, and I love ${obj.hobby}.`;
+const objLat = (obj) => {  
+    let fN = obj.firstName.charAt(0).toUpperCase() + obj.firstName.slice(1);
+    let lN = obj.lastName.charAt(0).toUpperCase() + obj.lastName.slice(1);
+     let aboutMe =  `my name is ${fN} ${lN} I am ${obj.age} YO, and I love ${obj.hobby}.`;
      return aboutMe;
 }
  

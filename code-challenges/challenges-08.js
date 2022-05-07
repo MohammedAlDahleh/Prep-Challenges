@@ -29,13 +29,10 @@
 const customerAndAge = (obj) => {
   // write your code here
   let customerArr =[];
-  function newForm(){
     for (const keyOfVal in obj){
     customerArr.push(`Customer Name :${keyOfVal} , Age : ${obj[keyOfVal]}`);
-    }
+    } 
     return customerArr;
-  }
-
 };
 // -------------------------------------------------------------------------------------------------------
 

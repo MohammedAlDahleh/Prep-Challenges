@@ -18,7 +18,7 @@
 // 
 
 const oddFiltration = (arr) => {
-    const result = arr.filter(num => num % 2 == 1);
+    const result = arr.filter(num => num % 2);
     return result;
 }
 

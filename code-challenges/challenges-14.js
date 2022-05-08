@@ -42,13 +42,13 @@ const LastWord = (str) => {
 //
 //  You can try to do the same task using the split method
 //
-//  Input: "you dare use my spells against me, potter"
+//  Input: " "
 //  Output: "potter"
 
 const LastWord_2 = (str) => {
     // write your code here
-    let LW = str.split(',');
-    return LW.slice(-1);
+    let LW = str.split(',').slice(-1).join("");
+    return LW;
 }
 // -------------------------------------------------------------------------------------------------------
 
@@ -72,6 +72,18 @@ const LastWord_2 = (str) => {
 
 const replaceWords = (str) => {
     // write your code here
+    let arr = str.split(" ");
+for (let i = 0;i<arr.length;i++){
+  if (arr[i] ==="I"){
+    arr.splice(i,1,"We");
+  }else if(arr[i] ==="was"){
+    arr.splice(i,1,"were");
+  }else if(arr[i] ==="am"){
+      arr.splice(i,1,"are");
+    }
+}
+var result =arr.join(" ");
+return result;
 }
 // -------------------------------------------------------------------------------------------------------
 

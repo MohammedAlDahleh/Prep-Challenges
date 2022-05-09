@@ -47,7 +47,7 @@ const LastWord = (str) => {
 
 const LastWord_2 = (str) => {
     // write your code here
-    let LW = str.split(',').slice(-1).join("");
+    let LW = str.split(' ').slice(-1).join("");
     return LW;
 }
 // -------------------------------------------------------------------------------------------------------

@@ -76,12 +76,8 @@ const stringReverse = (str) => {
         occ.unshift(init);
         return occ;
     }, []);
-<<<<<<< HEAD
     return result.join(' ');
-=======
-    return reversed.join(' ');
 
->>>>>>> 99454856a691dc457b97145b3a77bbbe966753c7
 }
 // -------------------------------------------------------------------------------------------------------
 

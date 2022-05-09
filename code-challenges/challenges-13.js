@@ -72,12 +72,16 @@ const stringReverse = (str) => {
     // write your code here
 
     let arr = str.split(' ');
-    let reversed = arr.reduce((ele, init) => {
-        e.unshift(init);
-        return ele;
+    let result = arr.reduce((occ, init) => {
+        occ.unshift(init);
+        return occ;
     }, []);
+<<<<<<< HEAD
+    return result.join(' ');
+=======
     return reversed.join(' ');
 
+>>>>>>> 99454856a691dc457b97145b3a77bbbe966753c7
 }
 // -------------------------------------------------------------------------------------------------------
 

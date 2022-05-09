@@ -39,6 +39,7 @@
 // Output: 5
 
 const objectCounter = (obj) => {
+
     
     let total= obj.reduce((init)=>{
         
@@ -49,6 +50,7 @@ const objectCounter = (obj) => {
     return total;
 
 };
+
 // -------------------------------------------------------------------------------------------------------
 
 // -------------------------------------------------------------------------------------------------------
@@ -68,12 +70,18 @@ const objectCounter = (obj) => {
 
 const stringReverse = (str) => {
     // write your code here
+
     let arr = str.split(' ');
     let result = arr.reduce((occ, init) => {
         occ.unshift(init);
         return occ;
     }, []);
+<<<<<<< HEAD
     return result.join(' ');
+=======
+    return reversed.join(' ');
+
+>>>>>>> 99454856a691dc457b97145b3a77bbbe966753c7
 }
 // -------------------------------------------------------------------------------------------------------
 

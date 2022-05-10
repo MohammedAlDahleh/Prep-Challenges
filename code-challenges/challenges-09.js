@@ -148,4 +148,4 @@ const mostExpensive = (budget, mouseArray, keyBoardArray) => {
 }
 // -------------------------------------------------------------------------------------------------------
 
-module.exports = { arrInc, roundDecimals, employeesBonus, mostExpensive }:
+module.exports = { arrInc, roundDecimals, employeesBonus, mostExpensive };

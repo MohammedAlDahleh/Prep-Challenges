@@ -30,7 +30,7 @@ const customerAndAge = (obj) => {
   // write your code here
   let customerArr =[];
     for (const keyOfVal in obj){
-    customerArr.push(`Customer Name :${keyOfVal} , Age : ${obj[keyOfVal]}`);
+    customerArr.push(`Customer Name :${keyOfVal} , Age :${obj[keyOfVal]}`);
     } 
     return customerArr;
 };

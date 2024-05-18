@@ -18,8 +18,9 @@
 
 function square(arr) {
 
-    const squareArr = arr.map(arr => arr * arr);
-   return squareArr;
+    let squareArr 
+    squareArr = arr.map(arr => arr * arr);
+    return squareArr;
 }
 // -------------------------------------------------------------------------------------------------------
 
@@ -127,6 +128,22 @@ function fullName(arr) {
 
 function gradesAvg(arr) {
     // write your code here
+    let arr4 = [];
+    arr.map(element => {
+        let obj = { firstName: element.firstName, lastName: element.lastName, gradsList: element.gradsList, avg: calcAvg(element.gradsList) };
+        arr4.push(obj);
+    });
+    //calac Avarg
+    function calcAvg(arr_av) {
+        let sum = 0;
+        for (let i = 0; i < arr_av.length; i++) {
+            sum = sum + arr_av[i];
+        }
+        let avg;
+        avg = sum / arr_av.length;
+        return avg;
+    }
+    return arr4;
 }
 // -------------------------------------------------------------------------------------------------------
 

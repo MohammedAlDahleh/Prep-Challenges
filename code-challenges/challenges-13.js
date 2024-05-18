@@ -38,7 +38,10 @@
 //
 // Output: 5
 
-const objectCounter = (obj) => {
+const objectCounter = (obj) => 
+    // write your code here
+
+}
 
     
     let total= obj.reduce((init)=>{
